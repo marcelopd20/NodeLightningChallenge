@@ -10,10 +10,11 @@ import SwiftUI
 @MainActor
 final class RankedConnectivityNodesViewModel: ObservableObject {
 
-    @Published var nodes: [NodeModel] = []
+    @Published var nodes = [NodeModel]()
     @Published var isLoading: Bool = false
     @Published var alertItem: AlertItem?
     @Published var presentAlert: Bool = false
+
 
     func getNodes() {
         isLoading = true
