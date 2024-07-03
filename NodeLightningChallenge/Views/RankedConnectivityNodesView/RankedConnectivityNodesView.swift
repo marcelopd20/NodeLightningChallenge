@@ -14,7 +14,7 @@ struct RankedConnectivityNodesView: View {
         ZStack {
             NavigationView {
                 ScrollView(.vertical) {
-                    ForEach(Array(viewModel.nodes.enumerated()), id:\.offset) { index, node in
+                    ForEach(viewModel.filteredNodes, id:\.index) { (index, node) in
                         NodeCardView(alias: node.alias,
                                      index: viewModel.toOrdinal(index + 1),
                                      country: node.country ?? "",
@@ -43,6 +43,7 @@ struct RankedConnectivityNodesView: View {
             Button("OK", role: .cancel) { viewModel.presentAlert = false }
         }
         .navigationTitle("Top 100 Conectividade")
+        .searchable(text: $viewModel.searchNode)
 
     }
 }

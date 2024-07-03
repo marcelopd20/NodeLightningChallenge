@@ -14,6 +14,13 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var alertItem: AlertItem?
     @Published var presentAlert: Bool = false
+    @Published var searchNode: String = ""
+    var filteredNodes: [(index: Int, nodeModel: NodeModel)] {
+        guard !searchNode.isEmpty else { return nodes.enumerated().map { (index, nodeModel) in (index: index, nodeModel: nodeModel) } }
+        return nodes.enumerated().filter { index, nodeModel in
+            nodeModel.alias.lowercased().contains(searchNode.lowercased())
+        }.map { (index, nodeModel) in (index: index, nodeModel: nodeModel) }
+    }
 
 
     func getNodes() {
