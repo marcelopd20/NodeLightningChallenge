@@ -18,17 +18,45 @@ import SwiftUI
 // TODO: Readme
 
 struct ContentView: View {
+    @State var nodes: [Node] = []
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+            ForEach(nodes, id:\.publicKey) { node in
+                Text("\(node.alias)")
+            }
+        }.onAppear(perform: {
+            API() { nodes in
+                self.nodes = nodes
+                print(self.nodes)
+            }
+        })
         .padding()
+    }
+    func API(completion: @escaping ([Node]) -> ()) {
+        guard let url = URL(string: "https://mempool.space/api/v1/lightning/nodes/rankings/connectivity") else {
+            print("erro")
+            return
+        }
+        URLSession.shared.dataTask(with: url) { data,response,error in
+            let nodes = try! JSONDecoder().decode([Node].self, from: data!)
+            print(nodes)
+            DispatchQueue.main.async {
+                completion(nodes)
+            }
+        }.resume()
     }
 }
 
 #Preview {
     ContentView()
+}
+struct Node: Decodable {
+    let publicKey: String?
+    let alias: String?
+    let channels: Int?
+    let capacity: Int?
+    let firstSeen: Int?
+    let updatedAt: Int?
+    let city: [String: String]?
+    let country: [String: String]?
 }
