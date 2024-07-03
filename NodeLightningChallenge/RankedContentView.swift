@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-// TODO: Criar tratamento de exceções da api
 // TODO: Desenvolver na UI - Intuitiva, dinâmica, metodo para atualizar dados
 // TODO: Testar
 // TODO: Readme
 
 struct RankedContentView: View {
-
     var body: some View {
         NavigationStack {
             RankedConnectivityNodesView()

@@ -45,22 +45,19 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
             }
         }
     }
+
+    func toOrdinal(_ place: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .ordinal
+        formatter.locale = Locale(identifier: "pt-BR")
+        return formatter.string(from: NSNumber(value: place)) ?? ""
+    }
+
+    func dateFormatter(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: date)
+    }
 }
 
-struct AlertItem: Identifiable {
-    let id = UUID()
-    let title: String
-    let message: String
-}
 
-struct AlertContext {
-    static let invalidData     = AlertItem(title: "Server Error",
-                                        message: "The data received from the server was invalid. Plese Contact support.")
-    static let invalidResponse = AlertItem(title: "Server Error",
-                                        message: "Invalid response from the server. Please try again later or contact support")
-    static let invalidURL      = AlertItem(title: "Server Error",
-                                        message: "There was an issue connecting to the server. If this persists, please contact support.")
-    static let unableToComplete = AlertItem(title: "Server Error",
-                                        message: "Unable to complete your request at this time. Please check your connection.")
-
-}

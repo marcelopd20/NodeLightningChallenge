@@ -34,9 +34,4 @@ final class NetworkManager {
 }
 
 
-enum MPError: Error {
-    case invalidURL
-    case invalidResponse
-    case invalidData
-    case unableToComplete
-}
+

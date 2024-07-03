@@ -16,10 +16,11 @@
 		95C3134B2C35887400BE0E2A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3134A2C35887400BE0E2A /* LoadingView.swift */; };
 		95C3134D2C3592B800BE0E2A /* MPErrorThrownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3134C2C3592B800BE0E2A /* MPErrorThrownTest.swift */; };
 		95C3134F2C35963400BE0E2A /* RawNodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3134E2C35963400BE0E2A /* RawNodeTest.swift */; };
+		95C313522C359F5200BE0E2A /* MPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C313512C359F5200BE0E2A /* MPError.swift */; };
+		95C313542C359F8A00BE0E2A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C313532C359F8A00BE0E2A /* AlertItem.swift */; };
 		95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */; };
 		95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */; };
 		95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338612C357EF5008DB6D3 /* NodeModel.swift */; };
-		95D3386A2C3581C7008DB6D3 /* NodeLightningChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */; };
 		95D338722C3581E3008DB6D3 /* NodeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338702C3581E0008DB6D3 /* NodeModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,11 +45,12 @@
 		95C3134A2C35887400BE0E2A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		95C3134C2C3592B800BE0E2A /* MPErrorThrownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPErrorThrownTest.swift; sourceTree = "<group>"; };
 		95C3134E2C35963400BE0E2A /* RawNodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawNodeTest.swift; sourceTree = "<group>"; };
+		95C313512C359F5200BE0E2A /* MPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPError.swift; sourceTree = "<group>"; };
+		95C313532C359F8A00BE0E2A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesView.swift; sourceTree = "<group>"; };
 		95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesViewModel.swift; sourceTree = "<group>"; };
 		95D338612C357EF5008DB6D3 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		95D338672C3581C7008DB6D3 /* NodeLightningChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodeLightningChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeLightningChallengeTests.swift; sourceTree = "<group>"; };
 		95D338702C3581E0008DB6D3 /* NodeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		95414EE22C3478B700479FB5 /* NodeLightningChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				95C313502C359F4300BE0E2A /* Errors */,
 				95D3385C2C357212008DB6D3 /* Views */,
 				95414EF72C34E5E700479FB5 /* Managers */,
 				95414EF42C34E4E400479FB5 /* Model */,
@@ -144,6 +147,15 @@
 			path = RankedConnectivityNodesView;
 			sourceTree = "<group>";
 		};
+		95C313502C359F4300BE0E2A /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				95C313512C359F5200BE0E2A /* MPError.swift */,
+				95C313532C359F8A00BE0E2A /* AlertItem.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		95D3385C2C357212008DB6D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +168,6 @@
 		95D338682C3581C7008DB6D3 /* NodeLightningChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */,
 				95D338702C3581E0008DB6D3 /* NodeModelTests.swift */,
 				95C3134C2C3592B800BE0E2A /* MPErrorThrownTest.swift */,
 				95C3134E2C35963400BE0E2A /* RawNodeTest.swift */,
@@ -267,6 +278,8 @@
 				95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */,
 				95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */,
 				95414EF92C34E63600479FB5 /* NetworkManager.swift in Sources */,
+				95C313542C359F8A00BE0E2A /* AlertItem.swift in Sources */,
+				95C313522C359F5200BE0E2A /* MPError.swift in Sources */,
 				95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */,
 				95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */,
 				95C3134B2C35887400BE0E2A /* LoadingView.swift in Sources */,
@@ -281,7 +294,6 @@
 			files = (
 				95C3134F2C35963400BE0E2A /* RawNodeTest.swift in Sources */,
 				95C3134D2C3592B800BE0E2A /* MPErrorThrownTest.swift in Sources */,
-				95D3386A2C3581C7008DB6D3 /* NodeLightningChallengeTests.swift in Sources */,
 				95D338722C3581E3008DB6D3 /* NodeModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
