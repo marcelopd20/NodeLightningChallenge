@@ -26,8 +26,8 @@ extension RawNode: NodeToModel {
     func toNodeModel() -> NodeModel {
         let firstSeenDate = Date(timeIntervalSince1970: TimeInterval(firstSeen))
         let updatedAtDate = Date(timeIntervalSince1970: TimeInterval(updatedAt))
-        let cityName = city?["pt-BR"] ?? city?["en"] ?? "Unknown"
-        let countryName = country?["pt-BR"] ?? country?["en"] ?? "Unknown"
+        let cityName = city?["pt-BR"] ?? city?["en"] ?? "Desconhecido"
+        let countryName = country?["pt-BR"] ?? country?["en"] ?? "Desconhecido"
         
         return NodeModel(publicKey: publicKey,
                          alias: alias,

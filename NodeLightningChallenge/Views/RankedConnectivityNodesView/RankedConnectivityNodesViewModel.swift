@@ -14,7 +14,7 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var alertItem: AlertItem?
     @Published var presentAlert: Bool = false
-    @Published var searchNode: String = ""
+    @Published var searchNode: String = "" 
     var filteredNodes: [(index_: Int, nodeModel: NodeModel)] {
 
         guard !searchNode.isEmpty else { return nodes.enumerated().map { (index, nodeModel) in (index_: index, nodeModel: nodeModel) } }
@@ -27,6 +27,8 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
     @Published var currentPage: Int = 0
     let itemsPerPage: Int = 10
     var paginatedNodes: [(index_: Int, nodeModel: NodeModel)] {
+        guard searchNode.isEmpty else { return Array(filteredNodes) }
+
         let startIndex = currentPage * itemsPerPage
         let endIndex = min(startIndex + itemsPerPage, filteredNodes.count)
         return Array(filteredNodes[startIndex..<endIndex])

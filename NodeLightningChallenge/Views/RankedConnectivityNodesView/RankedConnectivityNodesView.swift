@@ -24,38 +24,9 @@ struct RankedConnectivityNodesView: View {
                                      updateAt: viewModel.dateFormatter(node.updatedAt),
                                      btcCapacity: node.btcCapacity)
                     }
-                    VStack {
-                        Text("Página \(viewModel.currentPage + 1) de 10")
-                            .font(.system(.title3, design: .rounded, weight: .bold))
-                        HStack {
-
-                            Button {
-                                if viewModel.currentPage > 0 {
-                                    viewModel.currentPage -= 1
-                                }
-                            } label: {
-                                Text("Voltar")
-                                    .font(.system(.title3, design: .rounded, weight: .semibold))
-                                    .padding()
-                                    .foregroundStyle(Color.white)
-                                    .background(Color(.darkBlue1))
-                                    .clipShape(.rect(cornerRadius: 12))
-                            }
-                            Spacer()
-                            Button {
-                                if viewModel.currentPage < 9 {
-                                    viewModel.currentPage += 1
-                                }
-                            } label: {
-                                Text("Avançar")
-                                    .font(.system(.title3, design: .rounded, weight: .semibold))
-                                    .padding()
-                                    .foregroundStyle(Color.white)
-                                    .background(Color(.darkBlue1))
-                                    .clipShape(.rect(cornerRadius: 12))
-                            }
-                        }.padding()
-                    }.padding()
+                    if viewModel.searchNode.isEmpty {
+                        PaggingNodeListView(currentPage: $viewModel.currentPage)
+                    }
                 }
                 .task {
                     viewModel.getNodes()
@@ -75,7 +46,7 @@ struct RankedConnectivityNodesView: View {
             Button("OK", role: .cancel) { viewModel.presentAlert = false }
         }
         .navigationTitle("Top 100 Conectividade")
-        .searchable(text: $viewModel.searchNode)
+        .searchable(text: $viewModel.searchNode, prompt: "Buscar")
 
     }
 }
@@ -85,4 +56,5 @@ struct RankedConnectivityNodesView: View {
         RankedConnectivityNodesView()
     }
 }
+
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct LoadingView: View {
     var body: some View {
         ZStack {
-            ProgressView("Fetching Data...")
+            ProgressView("Carregando dados...")
                 .tint(Color.accentColor)
                 .scaleEffect(2.0, anchor: .center)
         }.ignoresSafeArea(.all)

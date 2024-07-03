@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95069A142C35D30400A5E860 /* PaggingNodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95069A132C35D30400A5E860 /* PaggingNodeListView.swift */; };
 		95414EE42C3478B700479FB5 /* NodeLightningChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EE32C3478B700479FB5 /* NodeLightningChallengeApp.swift */; };
 		95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EE52C3478B700479FB5 /* RankedContentView.swift */; };
 		95414EE82C3478B900479FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95414EE72C3478B900479FB5 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95069A132C35D30400A5E860 /* PaggingNodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaggingNodeListView.swift; sourceTree = "<group>"; };
 		95414EE02C3478B700479FB5 /* NodeLightningChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodeLightningChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95414EE32C3478B700479FB5 /* NodeLightningChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeLightningChallengeApp.swift; sourceTree = "<group>"; };
 		95414EE52C3478B700479FB5 /* RankedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */,
 				95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */,
 				95C313552C35C9EA00BE0E2A /* NodeCardView.swift */,
+				95069A132C35D30400A5E860 /* PaggingNodeListView.swift */,
 			);
 			path = RankedConnectivityNodesView;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */,
 				95C3134B2C35887400BE0E2A /* LoadingView.swift in Sources */,
 				95414EE42C3478B700479FB5 /* NodeLightningChallengeApp.swift in Sources */,
+				95069A142C35D30400A5E860 /* PaggingNodeListView.swift in Sources */,
 				95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
