@@ -15,13 +15,22 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
     @Published var alertItem: AlertItem?
     @Published var presentAlert: Bool = false
     @Published var searchNode: String = ""
-    var filteredNodes: [(index: Int, nodeModel: NodeModel)] {
-        guard !searchNode.isEmpty else { return nodes.enumerated().map { (index, nodeModel) in (index: index, nodeModel: nodeModel) } }
+    var filteredNodes: [(index_: Int, nodeModel: NodeModel)] {
+
+        guard !searchNode.isEmpty else { return nodes.enumerated().map { (index, nodeModel) in (index_: index, nodeModel: nodeModel) } }
+
         return nodes.enumerated().filter { index, nodeModel in
             nodeModel.alias.lowercased().contains(searchNode.lowercased())
-        }.map { (index, nodeModel) in (index: index, nodeModel: nodeModel) }
-    }
+        }.map { (index, nodeModel) in (index_: index, nodeModel: nodeModel) }
 
+    }
+    @Published var currentPage: Int = 0
+    let itemsPerPage: Int = 10
+    var paginatedNodes: [(index_: Int, nodeModel: NodeModel)] {
+        let startIndex = currentPage * itemsPerPage
+        let endIndex = min(startIndex + itemsPerPage, filteredNodes.count)
+        return Array(filteredNodes[startIndex..<endIndex])
+    }
 
     func getNodes() {
         isLoading = true

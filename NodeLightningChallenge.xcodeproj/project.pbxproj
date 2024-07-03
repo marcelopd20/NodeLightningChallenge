@@ -18,6 +18,7 @@
 		95C3134F2C35963400BE0E2A /* RawNodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3134E2C35963400BE0E2A /* RawNodeTest.swift */; };
 		95C313522C359F5200BE0E2A /* MPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C313512C359F5200BE0E2A /* MPError.swift */; };
 		95C313542C359F8A00BE0E2A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C313532C359F8A00BE0E2A /* AlertItem.swift */; };
+		95C313562C35C9EA00BE0E2A /* NodeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C313552C35C9EA00BE0E2A /* NodeCardView.swift */; };
 		95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */; };
 		95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */; };
 		95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338612C357EF5008DB6D3 /* NodeModel.swift */; };
@@ -47,6 +48,7 @@
 		95C3134E2C35963400BE0E2A /* RawNodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawNodeTest.swift; sourceTree = "<group>"; };
 		95C313512C359F5200BE0E2A /* MPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPError.swift; sourceTree = "<group>"; };
 		95C313532C359F8A00BE0E2A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		95C313552C35C9EA00BE0E2A /* NodeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCardView.swift; sourceTree = "<group>"; };
 		95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesView.swift; sourceTree = "<group>"; };
 		95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesViewModel.swift; sourceTree = "<group>"; };
 		95D338612C357EF5008DB6D3 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */,
 				95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */,
+				95C313552C35C9EA00BE0E2A /* NodeCardView.swift */,
 			);
 			path = RankedConnectivityNodesView;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */,
 				95414EF92C34E63600479FB5 /* NetworkManager.swift in Sources */,
 				95C313542C359F8A00BE0E2A /* AlertItem.swift in Sources */,
+				95C313562C35C9EA00BE0E2A /* NodeCardView.swift in Sources */,
 				95C313522C359F5200BE0E2A /* MPError.swift in Sources */,
 				95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */,
 				95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */,
