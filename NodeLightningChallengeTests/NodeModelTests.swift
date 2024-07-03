@@ -33,7 +33,7 @@ final class NodeModelTests: XCTest {
 
         // ACT
         let btcCapacity = rawNode.convertToBTC()
-        let btcCapacity2 = rawNode.convertToBTC()
+        let btcCapacity2 = rawNode2.convertToBTC()
         // Assert
         XCTAssertEqual(btcCapacity, 1)
         XCTAssertEqual(btcCapacity2, 0.0055)
