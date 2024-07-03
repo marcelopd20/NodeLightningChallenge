@@ -16,7 +16,7 @@ struct NodeModel: Identifiable {
     let publicKey: String
     let alias: String
     let channels: Int
-    let capacity: Int
+    let btcCapacity: Double
     let firstSeen: Date
     let updatedAt: Date
     let city: String?

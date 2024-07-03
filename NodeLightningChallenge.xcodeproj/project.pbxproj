@@ -16,7 +16,19 @@
 		95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */; };
 		95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */; };
 		95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338612C357EF5008DB6D3 /* NodeModel.swift */; };
+		95D3386A2C3581C7008DB6D3 /* NodeLightningChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */; };
+		95D338722C3581E3008DB6D3 /* NodeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338702C3581E0008DB6D3 /* NodeModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95D3386B2C3581C7008DB6D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95414ED82C3478B700479FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95414EDF2C3478B700479FB5;
+			remoteInfo = NodeLightningChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		95414EE02C3478B700479FB5 /* NodeLightningChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodeLightningChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +41,20 @@
 		95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesView.swift; sourceTree = "<group>"; };
 		95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesViewModel.swift; sourceTree = "<group>"; };
 		95D338612C357EF5008DB6D3 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
+		95D338672C3581C7008DB6D3 /* NodeLightningChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodeLightningChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeLightningChallengeTests.swift; sourceTree = "<group>"; };
+		95D338702C3581E0008DB6D3 /* NodeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		95414EDD2C3478B700479FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95D338642C3581C7008DB6D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				95414EE22C3478B700479FB5 /* NodeLightningChallenge */,
+				95D338682C3581C7008DB6D3 /* NodeLightningChallengeTests */,
 				95414EE12C3478B700479FB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				95414EE02C3478B700479FB5 /* NodeLightningChallenge.app */,
+				95D338672C3581C7008DB6D3 /* NodeLightningChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +130,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		95D338682C3581C7008DB6D3 /* NodeLightningChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				95D338692C3581C7008DB6D3 /* NodeLightningChallengeTests.swift */,
+				95D338702C3581E0008DB6D3 /* NodeModelTests.swift */,
+			);
+			path = NodeLightningChallengeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +159,24 @@
 			productReference = 95414EE02C3478B700479FB5 /* NodeLightningChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		95D338662C3581C7008DB6D3 /* NodeLightningChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95D3386D2C3581C7008DB6D3 /* Build configuration list for PBXNativeTarget "NodeLightningChallengeTests" */;
+			buildPhases = (
+				95D338632C3581C7008DB6D3 /* Sources */,
+				95D338642C3581C7008DB6D3 /* Frameworks */,
+				95D338652C3581C7008DB6D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95D3386C2C3581C7008DB6D3 /* PBXTargetDependency */,
+			);
+			name = NodeLightningChallengeTests;
+			productName = NodeLightningChallengeTests;
+			productReference = 95D338672C3581C7008DB6D3 /* NodeLightningChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,6 +189,10 @@
 				TargetAttributes = {
 					95414EDF2C3478B700479FB5 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					95D338662C3581C7008DB6D3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 95414EDF2C3478B700479FB5;
 					};
 				};
 			};
@@ -155,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				95414EDF2C3478B700479FB5 /* NodeLightningChallenge */,
+				95D338662C3581C7008DB6D3 /* NodeLightningChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +222,13 @@
 			files = (
 				95414EEB2C3478B900479FB5 /* Preview Assets.xcassets in Resources */,
 				95414EE82C3478B900479FB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95D338652C3581C7008DB6D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +249,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95D338632C3581C7008DB6D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D3386A2C3581C7008DB6D3 /* NodeLightningChallengeTests.swift in Sources */,
+				95D338722C3581E3008DB6D3 /* NodeModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95D3386C2C3581C7008DB6D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95414EDF2C3478B700479FB5 /* NodeLightningChallenge */;
+			targetProxy = 95D3386B2C3581C7008DB6D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		95414EEC2C3478B900479FB5 /* Debug */ = {
@@ -366,6 +446,42 @@
 			};
 			name = Release;
 		};
+		95D3386E2C3581C7008DB6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U82ZBCXKJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpd.NodeLightningChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodeLightningChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NodeLightningChallenge";
+			};
+			name = Debug;
+		};
+		95D3386F2C3581C7008DB6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U82ZBCXKJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpd.NodeLightningChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodeLightningChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NodeLightningChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +499,15 @@
 			buildConfigurations = (
 				95414EEF2C3478B900479FB5 /* Debug */,
 				95414EF02C3478B900479FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95D3386D2C3581C7008DB6D3 /* Build configuration list for PBXNativeTarget "NodeLightningChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D3386E2C3581C7008DB6D3 /* Debug */,
+				95D3386F2C3581C7008DB6D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

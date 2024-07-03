@@ -16,6 +16,10 @@ struct RawNode: Decodable {
     let updatedAt: Int
     let city: [String: String]?
     let country: [String: String]?
+
+    func convertToBTC() -> Double {
+        return Double(capacity) / 1e8
+    }
 }
 
 extension RawNode: NodeToModel {
@@ -28,7 +32,7 @@ extension RawNode: NodeToModel {
         return NodeModel(publicKey: publicKey,
                          alias: alias,
                          channels: channels,
-                         capacity: capacity,
+                         btcCapacity: convertToBTC(),
                          firstSeen: firstSeenDate,
                          updatedAt: updatedAtDate,
                          city: cityName,
