@@ -25,7 +25,7 @@ final class RawNodeTest: XCTestCase {
                              btcCapacity: Double(36010516297) / 1e8,
                              firstSeen: Date(timeIntervalSince1970: TimeInterval(1522941222)),
                              updatedAt: Date(timeIntervalSince1970: TimeInterval(1661274935)),
-                             city: "Unknown",
+                             city: "Desconhecido",
                              country: "EUA")
         //ACT
         let expectedNode = rawNode.toNodeModel()
