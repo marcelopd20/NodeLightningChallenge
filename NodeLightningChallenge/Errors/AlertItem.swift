@@ -14,12 +14,12 @@ struct AlertItem: Identifiable {
 }
 
 struct AlertContext {
-    static let invalidData     = AlertItem(title: "Server Error",
-                                        message: "The data received from the server was invalid. Plese Contact support.")
-    static let invalidResponse = AlertItem(title: "Server Error",
-                                        message: "Invalid response from the server. Please try again later or contact support")
-    static let invalidURL      = AlertItem(title: "Server Error",
-                                        message: "There was an issue connecting to the server. If this persists, please contact support.")
-    static let unableToComplete = AlertItem(title: "Server Error",
-                                        message: "Unable to complete your request at this time. Please check your connection.")
+    static let invalidData     = AlertItem(title: "Erro de Servidor",
+                                        message: "Dados inválidos, contatar suporte.")
+    static let invalidResponse = AlertItem(title: "Erro de Servidor",
+                                        message: "Resposta Inválida, por favor contatar suporte ou tentar novamente.")
+    static let invalidURL      = AlertItem(title: "Erro de Servidor",
+                                        message: "Problema na conexão, por favor contatar suporte ou tentar novamente.")
+    static let unableToComplete = AlertItem(title: "Erro de Servidor",
+                                        message: "Requisição não completada, contatar suporte ou tentar novamente.")
 }

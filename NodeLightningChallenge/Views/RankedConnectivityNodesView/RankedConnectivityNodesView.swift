@@ -43,7 +43,7 @@ struct RankedConnectivityNodesView: View {
                             }
                             Spacer()
                             Button {
-                                if viewModel.currentPage < 10 {
+                                if viewModel.currentPage < 9 {
                                     viewModel.currentPage += 1
                                 }
                             } label: {
@@ -71,7 +71,7 @@ struct RankedConnectivityNodesView: View {
             }
 
         }
-        .alert(viewModel.alertItem?.message ?? "Contact Support", isPresented: $viewModel.presentAlert) {
+        .alert(viewModel.alertItem?.message ?? "Entrar em contato com suporte", isPresented: $viewModel.presentAlert) {
             Button("OK", role: .cancel) { viewModel.presentAlert = false }
         }
         .navigationTitle("Top 100 Conectividade")
