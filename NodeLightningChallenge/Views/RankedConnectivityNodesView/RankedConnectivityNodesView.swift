@@ -31,6 +31,9 @@ struct RankedConnectivityNodesView: View {
                 LoadingView()
             }
         }
+        .alert(viewModel.alertItem?.message ?? "Contact Support", isPresented: $viewModel.presentAlert) {
+            Button("OK", role: .cancel) { viewModel.presentAlert = false }
+        }
         .navigationTitle("Top 100 Connectivity")
         .toolbarBackground(Color.gray, for: .navigationBar)
 
