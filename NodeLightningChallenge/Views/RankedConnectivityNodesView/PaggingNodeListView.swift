@@ -15,30 +15,26 @@ struct PaggingNodeListView: View {
                 .font(.system(.title3, design: .rounded, weight: .bold))
             HStack {
                 Button {
-                    if currentPage > 0 {
-                        currentPage -= 1
-                    }
+                    currentPage -= 1
                 } label: {
                     Text("Voltar")
                         .font(.system(.title3, design: .rounded, weight: .semibold))
                         .padding()
                         .foregroundStyle(Color.white)
-                        .background(Color(.darkBlue1))
+                        .background(currentPage == 0 ? Color(.lightGray) : Color(.darkBlue1))
                         .clipShape(.rect(cornerRadius: 12))
-                }
+                } .disabled(currentPage == 0)
                 Spacer()
                 Button {
-                    if currentPage < 9 {
                         currentPage += 1
-                    }
                 } label: {
                     Text("Avançar")
                         .font(.system(.title3, design: .rounded, weight: .semibold))
                         .padding()
                         .foregroundStyle(Color.white)
-                        .background(Color(.darkBlue1))
+                        .background(currentPage == 9 ? Color(.lightGray) : Color(.darkBlue1))
                         .clipShape(.rect(cornerRadius: 12))
-                }
+                }.disabled(currentPage == 9)
             }.padding()
         }.padding()
     }
