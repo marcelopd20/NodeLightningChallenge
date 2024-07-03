@@ -11,7 +11,7 @@ import SwiftUI
 struct NodeLightningChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RankedContentView()
         }
     }
 }

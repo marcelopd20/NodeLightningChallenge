@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		95414EE42C3478B700479FB5 /* NodeLightningChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EE32C3478B700479FB5 /* NodeLightningChallengeApp.swift */; };
-		95414EE62C3478B700479FB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EE52C3478B700479FB5 /* ContentView.swift */; };
+		95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EE52C3478B700479FB5 /* RankedContentView.swift */; };
 		95414EE82C3478B900479FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95414EE72C3478B900479FB5 /* Assets.xcassets */; };
 		95414EEB2C3478B900479FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95414EEA2C3478B900479FB5 /* Preview Assets.xcassets */; };
+		95414EF92C34E63600479FB5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EF82C34E63600479FB5 /* NetworkManager.swift */; };
+		95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EFA2C356C1500479FB5 /* RawNode.swift */; };
+		95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */; };
+		95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95414EE02C3478B700479FB5 /* NodeLightningChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodeLightningChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95414EE32C3478B700479FB5 /* NodeLightningChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeLightningChallengeApp.swift; sourceTree = "<group>"; };
-		95414EE52C3478B700479FB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95414EE52C3478B700479FB5 /* RankedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedContentView.swift; sourceTree = "<group>"; };
 		95414EE72C3478B900479FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95414EEA2C3478B900479FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95414EF82C34E63600479FB5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		95414EFA2C356C1500479FB5 /* RawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawNode.swift; sourceTree = "<group>"; };
+		95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesView.swift; sourceTree = "<group>"; };
+		95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		95414EE22C3478B700479FB5 /* NodeLightningChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				95D3385C2C357212008DB6D3 /* Views */,
+				95414EF72C34E5E700479FB5 /* Managers */,
+				95414EF42C34E4E400479FB5 /* Model */,
 				95414EE32C3478B700479FB5 /* NodeLightningChallengeApp.swift */,
-				95414EE52C3478B700479FB5 /* ContentView.swift */,
+				95414EE52C3478B700479FB5 /* RankedContentView.swift */,
 				95414EE72C3478B900479FB5 /* Assets.xcassets */,
 				95414EE92C3478B900479FB5 /* Preview Content */,
 			);
@@ -65,6 +76,31 @@
 				95414EEA2C3478B900479FB5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95414EF42C34E4E400479FB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95414EFA2C356C1500479FB5 /* RawNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95414EF72C34E5E700479FB5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				95414EF82C34E63600479FB5 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		95D3385C2C357212008DB6D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */,
+				95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95414EE62C3478B700479FB5 /* ContentView.swift in Sources */,
+				95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */,
+				95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */,
+				95414EF92C34E63600479FB5 /* NetworkManager.swift in Sources */,
+				95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */,
 				95414EE42C3478B700479FB5 /* NodeLightningChallengeApp.swift in Sources */,
+				95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
