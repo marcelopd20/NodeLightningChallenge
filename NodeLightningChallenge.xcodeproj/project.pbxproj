@@ -15,6 +15,7 @@
 		95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95414EFA2C356C1500479FB5 /* RawNode.swift */; };
 		95D3385E2C357252008DB6D3 /* RankedConnectivityNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */; };
 		95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */; };
+		95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D338612C357EF5008DB6D3 /* NodeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		95414EFA2C356C1500479FB5 /* RawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawNode.swift; sourceTree = "<group>"; };
 		95D3385D2C357252008DB6D3 /* RankedConnectivityNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesView.swift; sourceTree = "<group>"; };
 		95D3385F2C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedConnectivityNodesViewModel.swift; sourceTree = "<group>"; };
+		95D338612C357EF5008DB6D3 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				95414EFA2C356C1500479FB5 /* RawNode.swift */,
+				95D338612C357EF5008DB6D3 /* NodeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				95414EFB2C356C1500479FB5 /* RawNode.swift in Sources */,
 				95414EF92C34E63600479FB5 /* NetworkManager.swift in Sources */,
 				95414EE62C3478B700479FB5 /* RankedContentView.swift in Sources */,
+				95D338622C357EF5008DB6D3 /* NodeModel.swift in Sources */,
 				95414EE42C3478B700479FB5 /* NodeLightningChallengeApp.swift in Sources */,
 				95D338602C357362008DB6D3 /* RankedConnectivityNodesViewModel.swift in Sources */,
 			);

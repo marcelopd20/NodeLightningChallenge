@@ -14,7 +14,7 @@ struct RankedConnectivityNodesView: View {
         ZStack {
             NavigationView {
                 List {
-                    ForEach(viewModel.nodes, id:\.alias) { node in
+                    ForEach(viewModel.nodes) { node in
                         Text(node.alias)
                     }
                 }

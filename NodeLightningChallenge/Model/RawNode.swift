@@ -17,3 +17,21 @@ struct RawNode: Decodable {
     let city: [String: String]?
     let country: [String: String]?
 }
+
+extension RawNode: NodeToModel {
+    func toNodeModel() -> NodeModel {
+        let firstSeenDate = Date(timeIntervalSince1970: TimeInterval(firstSeen))
+        let updatedAtDate = Date(timeIntervalSince1970: TimeInterval(updatedAt))
+        let cityName = city?["pt-BR"] ?? city?["en"] ?? "Unknown"
+        let countryName = country?["pt-BR"] ?? country?["en"] ?? "Unknown"
+        
+        return NodeModel(publicKey: publicKey,
+                         alias: alias,
+                         channels: channels,
+                         capacity: capacity,
+                         firstSeen: firstSeenDate,
+                         updatedAt: updatedAtDate,
+                         city: cityName,
+                         country: countryName)
+    }
+}

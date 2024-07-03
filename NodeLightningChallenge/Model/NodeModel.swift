@@ -2,7 +2,7 @@
 //  NodeModel.swift
 //  NodeLightningChallenge
 //
-//  Created by Marcelo Pastana Duarte on 02/07/24.
+//  Created by Marcelo Pastana Duarte on 03/07/24.
 //
 
 import Foundation
@@ -12,14 +12,13 @@ protocol NodeToModel {
 }
 
 struct NodeModel: Identifiable {
-    var id: UUID = UUID()
+    let id = UUID()
     let publicKey: String
     let alias: String
     let channels: Int
     let capacity: Int
     let firstSeen: Date
     let updatedAt: Date
-    let city: String
-    let country: String
-
+    let city: String?
+    let country: String?
 }

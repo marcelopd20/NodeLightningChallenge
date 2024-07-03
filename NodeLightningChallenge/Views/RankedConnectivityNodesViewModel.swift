@@ -9,7 +9,7 @@ import Foundation
 
 final class RankedConnectivityNodesViewModel: ObservableObject {
 
-    @Published var nodes: [RawNode] = []
+    @Published var nodes: [NodeModel] = []
     @Published var isLoading: Bool = false
 
     func getNodes() {
@@ -17,7 +17,9 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
         Task {
             do {
                 let rawNodes = try await NetworkManager.shared.getNodes()
-                nodes = rawNodes
+                await MainActor.run {
+                    nodes = rawNodes.map { $0.toNodeModel() }
+                }
             } catch {
                 throw MPError.unableToComplete
             }
