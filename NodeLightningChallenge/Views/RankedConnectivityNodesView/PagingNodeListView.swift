@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PaggingNodeListView: View {
+struct PagingNodeListView: View {
     @Binding var currentPage: Int
     var body: some View {
         VStack {
@@ -41,5 +41,5 @@ struct PaggingNodeListView: View {
 }
 
 #Preview {
-    PaggingNodeListView(currentPage: .constant(1))
+    PagingNodeListView(currentPage: .constant(1))
 }

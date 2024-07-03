@@ -25,7 +25,7 @@ struct RankedConnectivityNodesView: View {
                                      btcCapacity: node.btcCapacity)
                     }
                     if viewModel.searchNode.isEmpty {
-                        PaggingNodeListView(currentPage: $viewModel.currentPage)
+                        PagingNodeListView(currentPage: $viewModel.currentPage)
                     }
                 }
                 .task {
@@ -33,9 +33,7 @@ struct RankedConnectivityNodesView: View {
                 }
             }
             .refreshable {
-                DispatchQueue.main.async {
                     viewModel.getNodes()
-                }
             }
             if viewModel.isLoading {
                 LoadingView()
