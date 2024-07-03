@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 final class RankedConnectivityNodesViewModel: ObservableObject {
 
     @Published var nodes: [NodeModel] = []
@@ -20,10 +21,10 @@ final class RankedConnectivityNodesViewModel: ObservableObject {
                 await MainActor.run {
                     nodes = rawNodes.map { $0.toNodeModel() }
                 }
+                self.isLoading = false
             } catch {
                 throw MPError.unableToComplete
             }
         }
-        isLoading = false
     }
 }

@@ -22,6 +22,14 @@ struct RankedConnectivityNodesView: View {
                     viewModel.getNodes()
                 }
             }
+            .refreshable {
+                DispatchQueue.main.async {
+                    viewModel.getNodes()
+                }
+            }
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
         .navigationTitle("Top 100 Connectivity")
         .toolbarBackground(Color.gray, for: .navigationBar)
